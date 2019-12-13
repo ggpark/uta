@@ -1,0 +1,12 @@
+
+IUIAutomationInvokePattern *pInvokePattern = NULL;
+IUnknown* pIU = NULL;
+pButtonElement->GetCurrentPattern(UIA_InvokePatternId, &pIU);
+HRESULT hr = pIU->QueryInterface(IID_IUIAutomationInvokePattern,(void**)&pInvokePattern);
+if (FAILED(hr)) 
+{
+ cout << "QueryInterface Failed" << endl; 
+ }
+
+pInvokePattern->Invoke();
+pInvokePattern->Release();
