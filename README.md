@@ -1,2 +1,2 @@
 # uta
-Console Application Based on c++ uiautomationcore.dll
+Console Application for ui automation library Based on c++ uiautomationcore.dll
